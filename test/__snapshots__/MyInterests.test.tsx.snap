@@ -1,0 +1,2043 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MyInterests renders article correctly with less items 1`] = `
+<div
+  cardStyle="article"
+  className="fd-card fd-my-interests article"
+>
+  <h3
+    className="fd-typography card-h fd-my-interests-h"
+    textStyle="card-h"
+  >
+    <span>
+      Onderwerpen aanpassen
+    </span>
+     
+    <i
+      className="icon-chevron-up"
+      onClick={[Function]}
+    />
+  </h3>
+  <div
+    className="content"
+  >
+    <div
+      className="fd-my-interests-controls"
+    >
+      <div
+        className="fd-my-interests-input"
+      >
+        <input
+          onChange={[Function]}
+          onKeyUp={[Function]}
+          placeholder="Nieuw onderwerp..."
+          type="text"
+          value=""
+        />
+         
+        <button
+          className="fd-add-button"
+          onClick={[Function]}
+        >
+          Toevoegen
+        </button>
+      </div>
+    </div>
+    <ul>
+      <li>
+        <div
+          className="interest-container"
+        >
+          <a
+            href="/tag/Detailhandel"
+            title="Detailhandel"
+          >
+            Detailhandel
+          </a>
+          <span
+            className="interest-controls"
+          >
+            <span
+              className="alert"
+              data-addurl="/add-alert"
+              data-deleteurl="/add-alert"
+            >
+              <i
+                className="default-icon icon-bell"
+                data-tag="Detailhandel"
+                onClick={[Function]}
+              />
+              <i
+                className="active-icon icon-bell1"
+                data-tag="Detailhandel"
+                onClick={[Function]}
+              />
+            </span>
+            <button
+              className="fd-follow-button default"
+              data-addurl="/add-interest"
+              data-deleteurl="/delete-interest"
+              data-tag="Detailhandel"
+              onClick={[Function]}
+            >
+              <span
+                className="cross"
+              />
+               
+              <span
+                className="button-text default-text"
+              >
+                Volg
+              </span>
+              <span
+                className="button-text active-text"
+              >
+                Ontvolg
+              </span>
+            </button>
+          </span>
+        </div>
+      </li>
+      <li>
+        <div
+          className="interest-container selected"
+        >
+          <a
+            href="/tag/Eten & Drinken"
+            title="Eten & Drinken"
+          >
+            Eten & Drinken
+          </a>
+          <span
+            className="interest-controls"
+          >
+            <span
+              className="alert"
+              data-addurl="/add-alert"
+              data-deleteurl="/add-alert"
+            >
+              <i
+                className="default-icon icon-bell"
+                data-tag="Eten & Drinken"
+                onClick={[Function]}
+              />
+              <i
+                className="active-icon icon-bell1"
+                data-tag="Eten & Drinken"
+                onClick={[Function]}
+              />
+            </span>
+            <button
+              className="fd-follow-button default"
+              data-addurl="/add-interest"
+              data-deleteurl="/delete-interest"
+              data-selected={true}
+              data-tag="Eten & Drinken"
+              onClick={[Function]}
+            >
+              <span
+                className="cross"
+              />
+               
+              <span
+                className="button-text default-text"
+              >
+                Volg
+              </span>
+              <span
+                className="button-text active-text"
+              >
+                Ontvolg
+              </span>
+            </button>
+          </span>
+        </div>
+      </li>
+      <li>
+        <div
+          className="interest-container selected"
+        >
+          <a
+            href="/tag/Foodie"
+            title="Foodie"
+          >
+            Foodie
+          </a>
+          <span
+            className="interest-controls"
+          >
+            <span
+              className="alert"
+              data-addurl="/add-alert"
+              data-deleteurl="/add-alert"
+            >
+              <i
+                className="default-icon icon-bell"
+                data-tag="Foodie"
+                onClick={[Function]}
+              />
+              <i
+                className="active-icon icon-bell1"
+                data-tag="Foodie"
+                onClick={[Function]}
+              />
+            </span>
+            <button
+              className="fd-follow-button default"
+              data-addurl="/add-interest"
+              data-deleteurl="/delete-interest"
+              data-selected={true}
+              data-tag="Foodie"
+              onClick={[Function]}
+            >
+              <span
+                className="cross"
+              />
+               
+              <span
+                className="button-text default-text"
+              >
+                Volg
+              </span>
+              <span
+                className="button-text active-text"
+              >
+                Ontvolg
+              </span>
+            </button>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`MyInterests renders article correctly with less items 2`] = `
+<div
+  cardStyle="default"
+  className="fd-card fd-my-interests default"
+>
+  <h3
+    className="fd-typography card-h fd-my-interests-h"
+    textStyle="card-h"
+  >
+    <span>
+      Onderwerpen aanpassen
+    </span>
+     
+    <i
+      className="icon-chevron-up"
+      onClick={[Function]}
+    />
+  </h3>
+  <div
+    className="content"
+  >
+    <div
+      className="fd-my-interests-controls"
+    >
+      <div
+        className="fd-my-interests-input"
+      >
+        <input
+          onChange={[Function]}
+          onKeyUp={[Function]}
+          placeholder="Nieuw onderwerp..."
+          type="text"
+          value=""
+        />
+         
+        <button
+          className="fd-add-button"
+          onClick={[Function]}
+        >
+          Toevoegen
+        </button>
+      </div>
+    </div>
+    <ul>
+      <li>
+        <div
+          className="interest-container"
+        >
+          <a
+            href="/tag/Detailhandel"
+            title="Detailhandel"
+          >
+            Detailhandel
+          </a>
+          <span
+            className="interest-controls"
+          >
+            <span
+              className="alert"
+              data-addurl="/add-alert"
+              data-deleteurl="/add-alert"
+            >
+              <i
+                className="default-icon icon-bell"
+                data-tag="Detailhandel"
+                onClick={[Function]}
+              />
+              <i
+                className="active-icon icon-bell1"
+                data-tag="Detailhandel"
+                onClick={[Function]}
+              />
+            </span>
+            <button
+              className="fd-follow-button default"
+              data-addurl="/add-interest"
+              data-deleteurl="/delete-interest"
+              data-tag="Detailhandel"
+              onClick={[Function]}
+            >
+              <span
+                className="cross"
+              />
+               
+              <span
+                className="button-text default-text"
+              >
+                Volg
+              </span>
+              <span
+                className="button-text active-text"
+              >
+                Ontvolg
+              </span>
+            </button>
+          </span>
+        </div>
+      </li>
+      <li>
+        <div
+          className="interest-container selected"
+        >
+          <a
+            href="/tag/Eten & Drinken"
+            title="Eten & Drinken"
+          >
+            Eten & Drinken
+          </a>
+          <span
+            className="interest-controls"
+          >
+            <span
+              className="alert"
+              data-addurl="/add-alert"
+              data-deleteurl="/add-alert"
+            >
+              <i
+                className="default-icon icon-bell"
+                data-tag="Eten & Drinken"
+                onClick={[Function]}
+              />
+              <i
+                className="active-icon icon-bell1"
+                data-tag="Eten & Drinken"
+                onClick={[Function]}
+              />
+            </span>
+            <button
+              className="fd-follow-button default"
+              data-addurl="/add-interest"
+              data-deleteurl="/delete-interest"
+              data-selected={true}
+              data-tag="Eten & Drinken"
+              onClick={[Function]}
+            >
+              <span
+                className="cross"
+              />
+               
+              <span
+                className="button-text default-text"
+              >
+                Volg
+              </span>
+              <span
+                className="button-text active-text"
+              >
+                Ontvolg
+              </span>
+            </button>
+          </span>
+        </div>
+      </li>
+      <li>
+        <div
+          className="interest-container selected"
+        >
+          <a
+            href="/tag/Foodie"
+            title="Foodie"
+          >
+            Foodie
+          </a>
+          <span
+            className="interest-controls"
+          >
+            <span
+              className="alert"
+              data-addurl="/add-alert"
+              data-deleteurl="/add-alert"
+            >
+              <i
+                className="default-icon icon-bell"
+                data-tag="Foodie"
+                onClick={[Function]}
+              />
+              <i
+                className="active-icon icon-bell1"
+                data-tag="Foodie"
+                onClick={[Function]}
+              />
+            </span>
+            <button
+              className="fd-follow-button default"
+              data-addurl="/add-interest"
+              data-deleteurl="/delete-interest"
+              data-selected={true}
+              data-tag="Foodie"
+              onClick={[Function]}
+            >
+              <span
+                className="cross"
+              />
+               
+              <span
+                className="button-text default-text"
+              >
+                Volg
+              </span>
+              <span
+                className="button-text active-text"
+              >
+                Ontvolg
+              </span>
+            </button>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`MyInterests renders correctly 1`] = `
+<div
+  cardStyle="default"
+  className="fd-card fd-my-interests default"
+>
+  <h3
+    className="fd-typography card-h fd-my-interests-h"
+    textStyle="card-h"
+  >
+    <span>
+      Onderwerpen aanpassen
+    </span>
+     
+    <i
+      className="icon-chevron-up"
+      onClick={[Function]}
+    />
+  </h3>
+  <div
+    className="content"
+  >
+    <div
+      className="fd-my-interests-controls"
+    >
+      <div
+        className="fd-my-interests-input"
+      >
+        <input
+          onChange={[Function]}
+          onKeyUp={[Function]}
+          placeholder="Nieuw onderwerp..."
+          type="text"
+          value=""
+        />
+         
+        <button
+          className="fd-add-button"
+          onClick={[Function]}
+        >
+          Toevoegen
+        </button>
+      </div>
+    </div>
+    <ul>
+      <li>
+        <div
+          className="interest-container"
+        >
+          <a
+            href="/tag/Detailhandel"
+            title="Detailhandel"
+          >
+            Detailhandel
+          </a>
+          <span
+            className="interest-controls"
+          >
+            <span
+              className="alert"
+              data-addurl="/add-alert"
+              data-deleteurl="/add-alert"
+            >
+              <i
+                className="default-icon icon-bell"
+                data-tag="Detailhandel"
+                onClick={[Function]}
+              />
+              <i
+                className="active-icon icon-bell1"
+                data-tag="Detailhandel"
+                onClick={[Function]}
+              />
+            </span>
+            <button
+              className="fd-follow-button default"
+              data-addurl="/add-interest"
+              data-deleteurl="/delete-interest"
+              data-tag="Detailhandel"
+              onClick={[Function]}
+            >
+              <span
+                className="cross"
+              />
+               
+              <span
+                className="button-text default-text"
+              >
+                Volg
+              </span>
+              <span
+                className="button-text active-text"
+              >
+                Ontvolg
+              </span>
+            </button>
+          </span>
+        </div>
+      </li>
+      <li>
+        <div
+          className="interest-container selected"
+        >
+          <a
+            href="/tag/Eten & Drinken"
+            title="Eten & Drinken"
+          >
+            Eten & Drinken
+          </a>
+          <span
+            className="interest-controls"
+          >
+            <span
+              className="alert"
+              data-addurl="/add-alert"
+              data-deleteurl="/add-alert"
+            >
+              <i
+                className="default-icon icon-bell"
+                data-tag="Eten & Drinken"
+                onClick={[Function]}
+              />
+              <i
+                className="active-icon icon-bell1"
+                data-tag="Eten & Drinken"
+                onClick={[Function]}
+              />
+            </span>
+            <button
+              className="fd-follow-button default"
+              data-addurl="/add-interest"
+              data-deleteurl="/delete-interest"
+              data-selected={true}
+              data-tag="Eten & Drinken"
+              onClick={[Function]}
+            >
+              <span
+                className="cross"
+              />
+               
+              <span
+                className="button-text default-text"
+              >
+                Volg
+              </span>
+              <span
+                className="button-text active-text"
+              >
+                Ontvolg
+              </span>
+            </button>
+          </span>
+        </div>
+      </li>
+      <li>
+        <div
+          className="interest-container selected"
+        >
+          <a
+            href="/tag/Foodie"
+            title="Foodie"
+          >
+            Foodie
+          </a>
+          <span
+            className="interest-controls"
+          >
+            <span
+              className="alert"
+              data-addurl="/add-alert"
+              data-deleteurl="/add-alert"
+            >
+              <i
+                className="default-icon icon-bell"
+                data-tag="Foodie"
+                onClick={[Function]}
+              />
+              <i
+                className="active-icon icon-bell1"
+                data-tag="Foodie"
+                onClick={[Function]}
+              />
+            </span>
+            <button
+              className="fd-follow-button default"
+              data-addurl="/add-interest"
+              data-deleteurl="/delete-interest"
+              data-selected={true}
+              data-tag="Foodie"
+              onClick={[Function]}
+            >
+              <span
+                className="cross"
+              />
+               
+              <span
+                className="button-text default-text"
+              >
+                Volg
+              </span>
+              <span
+                className="button-text active-text"
+              >
+                Ontvolg
+              </span>
+            </button>
+          </span>
+        </div>
+      </li>
+      <li>
+        <div
+          className="interest-container selected"
+        >
+          <a
+            href="/tag/Junkfood"
+            title="Junkfood"
+          >
+            Junkfood
+          </a>
+          <span
+            className="interest-controls"
+          >
+            <span
+              className="alert"
+              data-addurl="/add-alert"
+              data-deleteurl="/add-alert"
+            >
+              <i
+                className="default-icon icon-bell"
+                data-tag="Junkfood"
+                onClick={[Function]}
+              />
+              <i
+                className="active-icon icon-bell1"
+                data-tag="Junkfood"
+                onClick={[Function]}
+              />
+            </span>
+            <button
+              className="fd-follow-button default"
+              data-addurl="/add-interest"
+              data-deleteurl="/delete-interest"
+              data-selected={true}
+              data-tag="Junkfood"
+              onClick={[Function]}
+            >
+              <span
+                className="cross"
+              />
+               
+              <span
+                className="button-text default-text"
+              >
+                Volg
+              </span>
+              <span
+                className="button-text active-text"
+              >
+                Ontvolg
+              </span>
+            </button>
+          </span>
+        </div>
+      </li>
+      <li>
+        <div
+          className="interest-container selected"
+        >
+          <a
+            href="/tag/Supermarkt"
+            title="Supermarkt"
+          >
+            Supermarkt
+          </a>
+          <span
+            className="interest-controls"
+          >
+            <span
+              className="alert selected"
+              data-addurl="/add-alert"
+              data-deleteurl="/add-alert"
+            >
+              <i
+                className="default-icon icon-bell"
+                data-tag="Supermarkt"
+                onClick={[Function]}
+              />
+              <i
+                className="active-icon icon-bell1"
+                data-tag="Supermarkt"
+                onClick={[Function]}
+              />
+            </span>
+            <button
+              className="fd-follow-button default"
+              data-addurl="/add-interest"
+              data-deleteurl="/delete-interest"
+              data-selected={true}
+              data-tag="Supermarkt"
+              onClick={[Function]}
+            >
+              <span
+                className="cross"
+              />
+               
+              <span
+                className="button-text default-text"
+              >
+                Volg
+              </span>
+              <span
+                className="button-text active-text"
+              >
+                Ontvolg
+              </span>
+            </button>
+          </span>
+        </div>
+      </li>
+    </ul>
+    <ul
+      className="optional-content"
+    >
+      <li>
+        <div
+          className="interest-container selected"
+        >
+          <a
+            href="/tag/Sommelier"
+            title="Sommelier"
+          >
+            Sommelier
+          </a>
+          <span
+            className="interest-controls"
+          >
+            <span
+              className="alert"
+              data-addurl="/add-alert"
+              data-deleteurl="/add-alert"
+            >
+              <i
+                className="default-icon icon-bell"
+                data-tag="Sommelier"
+                onClick={[Function]}
+              />
+              <i
+                className="active-icon icon-bell1"
+                data-tag="Sommelier"
+                onClick={[Function]}
+              />
+            </span>
+            <button
+              className="fd-follow-button default"
+              data-addurl="/add-interest"
+              data-deleteurl="/delete-interest"
+              data-selected={true}
+              data-tag="Sommelier"
+              onClick={[Function]}
+            >
+              <span
+                className="cross"
+              />
+               
+              <span
+                className="button-text default-text"
+              >
+                Volg
+              </span>
+              <span
+                className="button-text active-text"
+              >
+                Ontvolg
+              </span>
+            </button>
+          </span>
+        </div>
+      </li>
+    </ul>
+    <span
+      className="show-less"
+      onClick={[Function]}
+    >
+      <i
+        className="icon-chevron-up"
+      />
+      <div>
+        Toon minder
+      </div>
+    </span>
+    <span
+      className="show-more"
+      onClick={[Function]}
+    >
+      <div>
+        Toon meer
+      </div>
+      <i
+        className="icon-chevron-down"
+      />
+    </span>
+  </div>
+</div>
+`;
+
+exports[`MyInterests renders correctly 2`] = `
+<div
+  cardStyle="default"
+  className="fd-card fd-my-interests default"
+>
+  <h3
+    className="fd-typography card-h fd-my-interests-h"
+    textStyle="card-h"
+  >
+    <span>
+      Onderwerpen aanpassen
+    </span>
+     
+    <i
+      className="icon-chevron-up"
+      onClick={[Function]}
+    />
+  </h3>
+  <div
+    className="content"
+  >
+    <div
+      className="fd-my-interests-controls"
+    >
+      <div
+        className="fd-my-interests-input"
+      >
+        <input
+          onChange={[Function]}
+          onKeyUp={[Function]}
+          placeholder="Nieuw onderwerp..."
+          type="text"
+          value=""
+        />
+         
+        <button
+          className="fd-add-button"
+          onClick={[Function]}
+        >
+          Toevoegen
+        </button>
+      </div>
+    </div>
+    <ul>
+      <li>
+        <div
+          className="interest-container"
+        >
+          <a
+            href="/tag/Detailhandel"
+            title="Detailhandel"
+          >
+            Detailhandel
+          </a>
+          <span
+            className="interest-controls"
+          >
+            <span
+              className="alert"
+              data-addurl="/add-alert"
+              data-deleteurl="/add-alert"
+            >
+              <i
+                className="default-icon icon-bell"
+                data-tag="Detailhandel"
+                onClick={[Function]}
+              />
+              <i
+                className="active-icon icon-bell1"
+                data-tag="Detailhandel"
+                onClick={[Function]}
+              />
+            </span>
+            <button
+              className="fd-follow-button default"
+              data-addurl="/add-interest"
+              data-deleteurl="/delete-interest"
+              data-tag="Detailhandel"
+              onClick={[Function]}
+            >
+              <span
+                className="cross"
+              />
+               
+              <span
+                className="button-text default-text"
+              >
+                Volg
+              </span>
+              <span
+                className="button-text active-text"
+              >
+                Ontvolg
+              </span>
+            </button>
+          </span>
+        </div>
+      </li>
+      <li>
+        <div
+          className="interest-container selected"
+        >
+          <a
+            href="/tag/Eten & Drinken"
+            title="Eten & Drinken"
+          >
+            Eten & Drinken
+          </a>
+          <span
+            className="interest-controls"
+          >
+            <span
+              className="alert"
+              data-addurl="/add-alert"
+              data-deleteurl="/add-alert"
+            >
+              <i
+                className="default-icon icon-bell"
+                data-tag="Eten & Drinken"
+                onClick={[Function]}
+              />
+              <i
+                className="active-icon icon-bell1"
+                data-tag="Eten & Drinken"
+                onClick={[Function]}
+              />
+            </span>
+            <button
+              className="fd-follow-button default"
+              data-addurl="/add-interest"
+              data-deleteurl="/delete-interest"
+              data-selected={true}
+              data-tag="Eten & Drinken"
+              onClick={[Function]}
+            >
+              <span
+                className="cross"
+              />
+               
+              <span
+                className="button-text default-text"
+              >
+                Volg
+              </span>
+              <span
+                className="button-text active-text"
+              >
+                Ontvolg
+              </span>
+            </button>
+          </span>
+        </div>
+      </li>
+      <li>
+        <div
+          className="interest-container selected"
+        >
+          <a
+            href="/tag/Foodie"
+            title="Foodie"
+          >
+            Foodie
+          </a>
+          <span
+            className="interest-controls"
+          >
+            <span
+              className="alert"
+              data-addurl="/add-alert"
+              data-deleteurl="/add-alert"
+            >
+              <i
+                className="default-icon icon-bell"
+                data-tag="Foodie"
+                onClick={[Function]}
+              />
+              <i
+                className="active-icon icon-bell1"
+                data-tag="Foodie"
+                onClick={[Function]}
+              />
+            </span>
+            <button
+              className="fd-follow-button default"
+              data-addurl="/add-interest"
+              data-deleteurl="/delete-interest"
+              data-selected={true}
+              data-tag="Foodie"
+              onClick={[Function]}
+            >
+              <span
+                className="cross"
+              />
+               
+              <span
+                className="button-text default-text"
+              >
+                Volg
+              </span>
+              <span
+                className="button-text active-text"
+              >
+                Ontvolg
+              </span>
+            </button>
+          </span>
+        </div>
+      </li>
+      <li>
+        <div
+          className="interest-container selected"
+        >
+          <a
+            href="/tag/Junkfood"
+            title="Junkfood"
+          >
+            Junkfood
+          </a>
+          <span
+            className="interest-controls"
+          >
+            <span
+              className="alert"
+              data-addurl="/add-alert"
+              data-deleteurl="/add-alert"
+            >
+              <i
+                className="default-icon icon-bell"
+                data-tag="Junkfood"
+                onClick={[Function]}
+              />
+              <i
+                className="active-icon icon-bell1"
+                data-tag="Junkfood"
+                onClick={[Function]}
+              />
+            </span>
+            <button
+              className="fd-follow-button default"
+              data-addurl="/add-interest"
+              data-deleteurl="/delete-interest"
+              data-selected={true}
+              data-tag="Junkfood"
+              onClick={[Function]}
+            >
+              <span
+                className="cross"
+              />
+               
+              <span
+                className="button-text default-text"
+              >
+                Volg
+              </span>
+              <span
+                className="button-text active-text"
+              >
+                Ontvolg
+              </span>
+            </button>
+          </span>
+        </div>
+      </li>
+      <li>
+        <div
+          className="interest-container selected"
+        >
+          <a
+            href="/tag/Supermarkt"
+            title="Supermarkt"
+          >
+            Supermarkt
+          </a>
+          <span
+            className="interest-controls"
+          >
+            <span
+              className="alert selected"
+              data-addurl="/add-alert"
+              data-deleteurl="/add-alert"
+            >
+              <i
+                className="default-icon icon-bell"
+                data-tag="Supermarkt"
+                onClick={[Function]}
+              />
+              <i
+                className="active-icon icon-bell1"
+                data-tag="Supermarkt"
+                onClick={[Function]}
+              />
+            </span>
+            <button
+              className="fd-follow-button default"
+              data-addurl="/add-interest"
+              data-deleteurl="/delete-interest"
+              data-selected={true}
+              data-tag="Supermarkt"
+              onClick={[Function]}
+            >
+              <span
+                className="cross"
+              />
+               
+              <span
+                className="button-text default-text"
+              >
+                Volg
+              </span>
+              <span
+                className="button-text active-text"
+              >
+                Ontvolg
+              </span>
+            </button>
+          </span>
+        </div>
+      </li>
+    </ul>
+    <ul
+      className="optional-content"
+    >
+      <li>
+        <div
+          className="interest-container selected"
+        >
+          <a
+            href="/tag/Sommelier"
+            title="Sommelier"
+          >
+            Sommelier
+          </a>
+          <span
+            className="interest-controls"
+          >
+            <span
+              className="alert"
+              data-addurl="/add-alert"
+              data-deleteurl="/add-alert"
+            >
+              <i
+                className="default-icon icon-bell"
+                data-tag="Sommelier"
+                onClick={[Function]}
+              />
+              <i
+                className="active-icon icon-bell1"
+                data-tag="Sommelier"
+                onClick={[Function]}
+              />
+            </span>
+            <button
+              className="fd-follow-button default"
+              data-addurl="/add-interest"
+              data-deleteurl="/delete-interest"
+              data-selected={true}
+              data-tag="Sommelier"
+              onClick={[Function]}
+            >
+              <span
+                className="cross"
+              />
+               
+              <span
+                className="button-text default-text"
+              >
+                Volg
+              </span>
+              <span
+                className="button-text active-text"
+              >
+                Ontvolg
+              </span>
+            </button>
+          </span>
+        </div>
+      </li>
+    </ul>
+    <span
+      className="show-less"
+      onClick={[Function]}
+    >
+      <i
+        className="icon-chevron-up"
+      />
+      <div>
+        Toon minder
+      </div>
+    </span>
+    <span
+      className="show-more"
+      onClick={[Function]}
+    >
+      <div>
+        Toon meer
+      </div>
+      <i
+        className="icon-chevron-down"
+      />
+    </span>
+  </div>
+</div>
+`;
+
+exports[`MyInterests renders persoonlijk correctly 1`] = `
+<div
+  cardStyle="persoonlijk"
+  className="fd-card fd-my-interests persoonlijk"
+>
+  <h3
+    className="fd-typography card-h fd-my-interests-h"
+    textStyle="card-h"
+  >
+    <span>
+      Onderwerpen aanpassen
+    </span>
+     
+    <i
+      className="icon-chevron-up"
+      onClick={[Function]}
+    />
+  </h3>
+  <div
+    className="content"
+  >
+    <div
+      className="fd-my-interests-controls"
+    >
+      <div
+        className="fd-my-interests-input"
+      >
+        <input
+          onChange={[Function]}
+          onKeyUp={[Function]}
+          placeholder="Nieuw onderwerp..."
+          type="text"
+          value=""
+        />
+         
+        <button
+          className="fd-add-button"
+          onClick={[Function]}
+        >
+          Toevoegen
+        </button>
+      </div>
+    </div>
+    <ul>
+      <li>
+        <div
+          className="interest-container"
+        >
+          <a
+            href="/tag/Detailhandel"
+            title="Detailhandel"
+          >
+            Detailhandel
+          </a>
+          <span
+            className="interest-controls"
+          >
+            <span
+              className="alert"
+              data-addurl="/add-alert"
+              data-deleteurl="/add-alert"
+            >
+              <i
+                className="default-icon icon-bell"
+                data-tag="Detailhandel"
+                onClick={[Function]}
+              />
+              <i
+                className="active-icon icon-bell1"
+                data-tag="Detailhandel"
+                onClick={[Function]}
+              />
+            </span>
+            <button
+              className="fd-follow-button persoonlijk"
+              data-addurl="/add-interest"
+              data-deleteurl="/delete-interest"
+              data-tag="Detailhandel"
+              onClick={[Function]}
+            >
+              <span
+                className="cross"
+              />
+               
+              <span
+                className="button-text default-text"
+              >
+                Volg
+              </span>
+              <span
+                className="button-text active-text"
+              >
+                Ontvolg
+              </span>
+            </button>
+          </span>
+        </div>
+      </li>
+      <li>
+        <div
+          className="interest-container selected"
+        >
+          <a
+            href="/tag/Eten & Drinken"
+            title="Eten & Drinken"
+          >
+            Eten & Drinken
+          </a>
+          <span
+            className="interest-controls"
+          >
+            <span
+              className="alert"
+              data-addurl="/add-alert"
+              data-deleteurl="/add-alert"
+            >
+              <i
+                className="default-icon icon-bell"
+                data-tag="Eten & Drinken"
+                onClick={[Function]}
+              />
+              <i
+                className="active-icon icon-bell1"
+                data-tag="Eten & Drinken"
+                onClick={[Function]}
+              />
+            </span>
+            <button
+              className="fd-follow-button persoonlijk"
+              data-addurl="/add-interest"
+              data-deleteurl="/delete-interest"
+              data-selected={true}
+              data-tag="Eten & Drinken"
+              onClick={[Function]}
+            >
+              <span
+                className="cross"
+              />
+               
+              <span
+                className="button-text default-text"
+              >
+                Volg
+              </span>
+              <span
+                className="button-text active-text"
+              >
+                Ontvolg
+              </span>
+            </button>
+          </span>
+        </div>
+      </li>
+      <li>
+        <div
+          className="interest-container selected"
+        >
+          <a
+            href="/tag/Foodie"
+            title="Foodie"
+          >
+            Foodie
+          </a>
+          <span
+            className="interest-controls"
+          >
+            <span
+              className="alert"
+              data-addurl="/add-alert"
+              data-deleteurl="/add-alert"
+            >
+              <i
+                className="default-icon icon-bell"
+                data-tag="Foodie"
+                onClick={[Function]}
+              />
+              <i
+                className="active-icon icon-bell1"
+                data-tag="Foodie"
+                onClick={[Function]}
+              />
+            </span>
+            <button
+              className="fd-follow-button persoonlijk"
+              data-addurl="/add-interest"
+              data-deleteurl="/delete-interest"
+              data-selected={true}
+              data-tag="Foodie"
+              onClick={[Function]}
+            >
+              <span
+                className="cross"
+              />
+               
+              <span
+                className="button-text default-text"
+              >
+                Volg
+              </span>
+              <span
+                className="button-text active-text"
+              >
+                Ontvolg
+              </span>
+            </button>
+          </span>
+        </div>
+      </li>
+      <li>
+        <div
+          className="interest-container selected"
+        >
+          <a
+            href="/tag/Junkfood"
+            title="Junkfood"
+          >
+            Junkfood
+          </a>
+          <span
+            className="interest-controls"
+          >
+            <span
+              className="alert"
+              data-addurl="/add-alert"
+              data-deleteurl="/add-alert"
+            >
+              <i
+                className="default-icon icon-bell"
+                data-tag="Junkfood"
+                onClick={[Function]}
+              />
+              <i
+                className="active-icon icon-bell1"
+                data-tag="Junkfood"
+                onClick={[Function]}
+              />
+            </span>
+            <button
+              className="fd-follow-button persoonlijk"
+              data-addurl="/add-interest"
+              data-deleteurl="/delete-interest"
+              data-selected={true}
+              data-tag="Junkfood"
+              onClick={[Function]}
+            >
+              <span
+                className="cross"
+              />
+               
+              <span
+                className="button-text default-text"
+              >
+                Volg
+              </span>
+              <span
+                className="button-text active-text"
+              >
+                Ontvolg
+              </span>
+            </button>
+          </span>
+        </div>
+      </li>
+      <li>
+        <div
+          className="interest-container selected"
+        >
+          <a
+            href="/tag/Supermarkt"
+            title="Supermarkt"
+          >
+            Supermarkt
+          </a>
+          <span
+            className="interest-controls"
+          >
+            <span
+              className="alert selected"
+              data-addurl="/add-alert"
+              data-deleteurl="/add-alert"
+            >
+              <i
+                className="default-icon icon-bell"
+                data-tag="Supermarkt"
+                onClick={[Function]}
+              />
+              <i
+                className="active-icon icon-bell1"
+                data-tag="Supermarkt"
+                onClick={[Function]}
+              />
+            </span>
+            <button
+              className="fd-follow-button persoonlijk"
+              data-addurl="/add-interest"
+              data-deleteurl="/delete-interest"
+              data-selected={true}
+              data-tag="Supermarkt"
+              onClick={[Function]}
+            >
+              <span
+                className="cross"
+              />
+               
+              <span
+                className="button-text default-text"
+              >
+                Volg
+              </span>
+              <span
+                className="button-text active-text"
+              >
+                Ontvolg
+              </span>
+            </button>
+          </span>
+        </div>
+      </li>
+    </ul>
+    <ul
+      className="optional-content"
+    >
+      <li>
+        <div
+          className="interest-container selected"
+        >
+          <a
+            href="/tag/Sommelier"
+            title="Sommelier"
+          >
+            Sommelier
+          </a>
+          <span
+            className="interest-controls"
+          >
+            <span
+              className="alert"
+              data-addurl="/add-alert"
+              data-deleteurl="/add-alert"
+            >
+              <i
+                className="default-icon icon-bell"
+                data-tag="Sommelier"
+                onClick={[Function]}
+              />
+              <i
+                className="active-icon icon-bell1"
+                data-tag="Sommelier"
+                onClick={[Function]}
+              />
+            </span>
+            <button
+              className="fd-follow-button persoonlijk"
+              data-addurl="/add-interest"
+              data-deleteurl="/delete-interest"
+              data-selected={true}
+              data-tag="Sommelier"
+              onClick={[Function]}
+            >
+              <span
+                className="cross"
+              />
+               
+              <span
+                className="button-text default-text"
+              >
+                Volg
+              </span>
+              <span
+                className="button-text active-text"
+              >
+                Ontvolg
+              </span>
+            </button>
+          </span>
+        </div>
+      </li>
+    </ul>
+    <span
+      className="show-less"
+      onClick={[Function]}
+    >
+      <i
+        className="icon-chevron-up"
+      />
+      <div>
+        Toon minder
+      </div>
+    </span>
+    <span
+      className="show-more"
+      onClick={[Function]}
+    >
+      <div>
+        Toon meer
+      </div>
+      <i
+        className="icon-chevron-down"
+      />
+    </span>
+  </div>
+</div>
+`;
+
+exports[`MyInterests renders persoonlijk correctly 2`] = `
+<div
+  cardStyle="persoonlijk"
+  className="fd-card fd-my-interests persoonlijk"
+>
+  <h3
+    className="fd-typography card-h fd-my-interests-h"
+    textStyle="card-h"
+  >
+    <span>
+      Onderwerpen aanpassen
+    </span>
+     
+    <i
+      className="icon-chevron-up"
+      onClick={[Function]}
+    />
+  </h3>
+  <div
+    className="content"
+  >
+    <div
+      className="fd-my-interests-controls"
+    >
+      <div
+        className="fd-my-interests-input"
+      >
+        <input
+          onChange={[Function]}
+          onKeyUp={[Function]}
+          placeholder="Nieuw onderwerp..."
+          type="text"
+          value=""
+        />
+         
+        <button
+          className="fd-add-button"
+          onClick={[Function]}
+        >
+          Toevoegen
+        </button>
+      </div>
+    </div>
+    <ul>
+      <li>
+        <div
+          className="interest-container"
+        >
+          <a
+            href="/tag/Detailhandel"
+            title="Detailhandel"
+          >
+            Detailhandel
+          </a>
+          <span
+            className="interest-controls"
+          >
+            <span
+              className="alert"
+              data-addurl="/add-alert"
+              data-deleteurl="/add-alert"
+            >
+              <i
+                className="default-icon icon-bell"
+                data-tag="Detailhandel"
+                onClick={[Function]}
+              />
+              <i
+                className="active-icon icon-bell1"
+                data-tag="Detailhandel"
+                onClick={[Function]}
+              />
+            </span>
+            <button
+              className="fd-follow-button persoonlijk"
+              data-addurl="/add-interest"
+              data-deleteurl="/delete-interest"
+              data-tag="Detailhandel"
+              onClick={[Function]}
+            >
+              <span
+                className="cross"
+              />
+               
+              <span
+                className="button-text default-text"
+              >
+                Volg
+              </span>
+              <span
+                className="button-text active-text"
+              >
+                Ontvolg
+              </span>
+            </button>
+          </span>
+        </div>
+      </li>
+      <li>
+        <div
+          className="interest-container selected"
+        >
+          <a
+            href="/tag/Eten & Drinken"
+            title="Eten & Drinken"
+          >
+            Eten & Drinken
+          </a>
+          <span
+            className="interest-controls"
+          >
+            <span
+              className="alert"
+              data-addurl="/add-alert"
+              data-deleteurl="/add-alert"
+            >
+              <i
+                className="default-icon icon-bell"
+                data-tag="Eten & Drinken"
+                onClick={[Function]}
+              />
+              <i
+                className="active-icon icon-bell1"
+                data-tag="Eten & Drinken"
+                onClick={[Function]}
+              />
+            </span>
+            <button
+              className="fd-follow-button persoonlijk"
+              data-addurl="/add-interest"
+              data-deleteurl="/delete-interest"
+              data-selected={true}
+              data-tag="Eten & Drinken"
+              onClick={[Function]}
+            >
+              <span
+                className="cross"
+              />
+               
+              <span
+                className="button-text default-text"
+              >
+                Volg
+              </span>
+              <span
+                className="button-text active-text"
+              >
+                Ontvolg
+              </span>
+            </button>
+          </span>
+        </div>
+      </li>
+      <li>
+        <div
+          className="interest-container selected"
+        >
+          <a
+            href="/tag/Foodie"
+            title="Foodie"
+          >
+            Foodie
+          </a>
+          <span
+            className="interest-controls"
+          >
+            <span
+              className="alert"
+              data-addurl="/add-alert"
+              data-deleteurl="/add-alert"
+            >
+              <i
+                className="default-icon icon-bell"
+                data-tag="Foodie"
+                onClick={[Function]}
+              />
+              <i
+                className="active-icon icon-bell1"
+                data-tag="Foodie"
+                onClick={[Function]}
+              />
+            </span>
+            <button
+              className="fd-follow-button persoonlijk"
+              data-addurl="/add-interest"
+              data-deleteurl="/delete-interest"
+              data-selected={true}
+              data-tag="Foodie"
+              onClick={[Function]}
+            >
+              <span
+                className="cross"
+              />
+               
+              <span
+                className="button-text default-text"
+              >
+                Volg
+              </span>
+              <span
+                className="button-text active-text"
+              >
+                Ontvolg
+              </span>
+            </button>
+          </span>
+        </div>
+      </li>
+      <li>
+        <div
+          className="interest-container selected"
+        >
+          <a
+            href="/tag/Junkfood"
+            title="Junkfood"
+          >
+            Junkfood
+          </a>
+          <span
+            className="interest-controls"
+          >
+            <span
+              className="alert"
+              data-addurl="/add-alert"
+              data-deleteurl="/add-alert"
+            >
+              <i
+                className="default-icon icon-bell"
+                data-tag="Junkfood"
+                onClick={[Function]}
+              />
+              <i
+                className="active-icon icon-bell1"
+                data-tag="Junkfood"
+                onClick={[Function]}
+              />
+            </span>
+            <button
+              className="fd-follow-button persoonlijk"
+              data-addurl="/add-interest"
+              data-deleteurl="/delete-interest"
+              data-selected={true}
+              data-tag="Junkfood"
+              onClick={[Function]}
+            >
+              <span
+                className="cross"
+              />
+               
+              <span
+                className="button-text default-text"
+              >
+                Volg
+              </span>
+              <span
+                className="button-text active-text"
+              >
+                Ontvolg
+              </span>
+            </button>
+          </span>
+        </div>
+      </li>
+      <li>
+        <div
+          className="interest-container selected"
+        >
+          <a
+            href="/tag/Supermarkt"
+            title="Supermarkt"
+          >
+            Supermarkt
+          </a>
+          <span
+            className="interest-controls"
+          >
+            <span
+              className="alert selected"
+              data-addurl="/add-alert"
+              data-deleteurl="/add-alert"
+            >
+              <i
+                className="default-icon icon-bell"
+                data-tag="Supermarkt"
+                onClick={[Function]}
+              />
+              <i
+                className="active-icon icon-bell1"
+                data-tag="Supermarkt"
+                onClick={[Function]}
+              />
+            </span>
+            <button
+              className="fd-follow-button persoonlijk"
+              data-addurl="/add-interest"
+              data-deleteurl="/delete-interest"
+              data-selected={true}
+              data-tag="Supermarkt"
+              onClick={[Function]}
+            >
+              <span
+                className="cross"
+              />
+               
+              <span
+                className="button-text default-text"
+              >
+                Volg
+              </span>
+              <span
+                className="button-text active-text"
+              >
+                Ontvolg
+              </span>
+            </button>
+          </span>
+        </div>
+      </li>
+    </ul>
+    <ul
+      className="optional-content"
+    >
+      <li>
+        <div
+          className="interest-container selected"
+        >
+          <a
+            href="/tag/Sommelier"
+            title="Sommelier"
+          >
+            Sommelier
+          </a>
+          <span
+            className="interest-controls"
+          >
+            <span
+              className="alert"
+              data-addurl="/add-alert"
+              data-deleteurl="/add-alert"
+            >
+              <i
+                className="default-icon icon-bell"
+                data-tag="Sommelier"
+                onClick={[Function]}
+              />
+              <i
+                className="active-icon icon-bell1"
+                data-tag="Sommelier"
+                onClick={[Function]}
+              />
+            </span>
+            <button
+              className="fd-follow-button persoonlijk"
+              data-addurl="/add-interest"
+              data-deleteurl="/delete-interest"
+              data-selected={true}
+              data-tag="Sommelier"
+              onClick={[Function]}
+            >
+              <span
+                className="cross"
+              />
+               
+              <span
+                className="button-text default-text"
+              >
+                Volg
+              </span>
+              <span
+                className="button-text active-text"
+              >
+                Ontvolg
+              </span>
+            </button>
+          </span>
+        </div>
+      </li>
+    </ul>
+    <span
+      className="show-less"
+      onClick={[Function]}
+    >
+      <i
+        className="icon-chevron-up"
+      />
+      <div>
+        Toon minder
+      </div>
+    </span>
+    <span
+      className="show-more"
+      onClick={[Function]}
+    >
+      <div>
+        Toon meer
+      </div>
+      <i
+        className="icon-chevron-down"
+      />
+    </span>
+  </div>
+</div>
+`;
