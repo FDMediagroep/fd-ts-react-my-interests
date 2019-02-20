@@ -29,7 +29,7 @@ module.exports = {
         extensions: ['.js', '.jsx', '.ts', '.tsx']
     },
     externals: {
-        '@fdmg/fd-button': '@fdmg/fd-button',
+        '@fdmg/fd-buttons': '@fdmg/fd-buttons',
         '@fdmg/fd-card': '@fdmg/fd-card',
         '@fdmg/fd-typography': '@fdmg/fd-typography',
         'react': 'react',

@@ -7,7 +7,7 @@ import uniqid from 'uniqid';
 const GlobalStyle = createGlobalStyle`
     .content-area {
         &.article {
-            background-color: #f1ded0;
+            background-color: #ffeadb;
         }
         &.persoonlijk {
             background-color: white;

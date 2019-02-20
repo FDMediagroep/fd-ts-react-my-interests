@@ -1,6 +1,6 @@
 {
   "name": "@fdmg/fd-my-interests",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "FD-themed my interests",
   "types": "dist/MyInterests.d.ts",
   "main": "dist/my-interests.js",
@@ -38,9 +38,9 @@
   "author": "Willem Liu",
   "license": "ISC",
   "devDependencies": {
-    "@fdmg/fd-buttons": "^1.0.17",
+    "@fdmg/fd-buttons": "^1.0.18",
     "@types/jest": "^24.0.5",
-    "@types/react": "^16.8.3",
+    "@types/react": "^16.8.4",
     "@types/react-dom": "^16.8.1",
     "@types/react-test-renderer": "^16.8.1",
     "@types/styled-components": "4.1.10",
@@ -64,7 +64,7 @@
   },
   "dependencies": {
     "@fdmg/fd-card": "^1.0.8",
-    "@fdmg/fd-typography": "^1.0.24",
+    "@fdmg/fd-typography": "^1.0.25",
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
     "styled-components": "^4.1.3",
