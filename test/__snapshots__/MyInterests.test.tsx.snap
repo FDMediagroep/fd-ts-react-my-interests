@@ -36,7 +36,7 @@ exports[`MyInterests renders article correctly with less items 1`] = `
         />
          
         <button
-          className="fd-add-button"
+          className="fd-add-button default"
           onClick={[Function]}
         >
           Toevoegen
@@ -249,7 +249,7 @@ exports[`MyInterests renders article correctly with less items 2`] = `
         />
          
         <button
-          className="fd-add-button"
+          className="fd-add-button default"
           onClick={[Function]}
         >
           Toevoegen
@@ -462,7 +462,7 @@ exports[`MyInterests renders correctly 1`] = `
         />
          
         <button
-          className="fd-add-button"
+          className="fd-add-button default"
           onClick={[Function]}
         >
           Toevoegen
@@ -866,7 +866,7 @@ exports[`MyInterests renders correctly 2`] = `
         />
          
         <button
-          className="fd-add-button"
+          className="fd-add-button default"
           onClick={[Function]}
         >
           Toevoegen
@@ -1270,7 +1270,7 @@ exports[`MyInterests renders persoonlijk correctly 1`] = `
         />
          
         <button
-          className="fd-add-button"
+          className="fd-add-button persoonlijk"
           onClick={[Function]}
         >
           Toevoegen
@@ -1674,7 +1674,7 @@ exports[`MyInterests renders persoonlijk correctly 2`] = `
         />
          
         <button
-          className="fd-add-button"
+          className="fd-add-button persoonlijk"
           onClick={[Function]}
         >
           Toevoegen

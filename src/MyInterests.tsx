@@ -101,7 +101,7 @@ export default class MyInterests extends PureComponent<any, any> {
                     </TypoGraphy>
                     {this.state.showContent ? <div className="content">
                         <div className="fd-my-interests-controls">
-                            <div className="fd-my-interests-input"><input type="text" placeholder="Nieuw onderwerp..." onChange={this.onInterestChange} value={this.state.interestValue} onKeyUp={this.onKeyUp}/> <AddButton onClick={this.onAddInterest}>Toevoegen</AddButton></div>
+                            <div className="fd-my-interests-input"><input type="text" placeholder="Nieuw onderwerp..." onChange={this.onInterestChange} value={this.state.interestValue} onKeyUp={this.onKeyUp}/> <AddButton buttonStyle={this.props.cardStyle === 'persoonlijk' ? this.props.cardStyle : 'default'} onClick={this.onAddInterest}>Toevoegen</AddButton></div>
                         </div>
 
                         <ul>

@@ -1,6 +1,6 @@
 {
   "name": "@fdmg/fd-my-interests",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "FD-themed my interests",
   "types": "dist/MyInterests.d.ts",
   "main": "dist/my-interests.js",
