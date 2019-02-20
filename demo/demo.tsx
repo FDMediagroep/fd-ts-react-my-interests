@@ -5,7 +5,19 @@ import { createGlobalStyle } from 'styled-components';
 import uniqid from 'uniqid';
 
 const GlobalStyle = createGlobalStyle`
+    .centered {
+        width: 1064px;
+        margin: auto;
+    }
+    section.main {
+        width: 100%;
+        display: table;
+    }
+
     .content-area {
+        &.overview {
+            background-color: #f1ded0;
+        }
         &.article {
             background-color: #ffeadb;
         }
@@ -13,7 +25,13 @@ const GlobalStyle = createGlobalStyle`
             background-color: white;
         }
 
+        main {
+            display: table-cell;
+        }
+
         aside {
+            display: table-cell;
+            width: 300px;
             padding-top: 1rem;
             padding-bottom: 1rem;
         }
