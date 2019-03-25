@@ -1,6 +1,6 @@
 {
   "name": "@fdmg/fd-my-interests",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "FD-themed my interests",
   "types": "dist/MyInterests.d.ts",
   "main": "dist/my-interests.js",
@@ -46,14 +46,14 @@
     "@types/uniqid": "^4.1.3",
     "@types/webpack-env": "^1.13.9",
     "awesome-typescript-loader": "^5.2.1",
-    "chokidar": "^2.1.1",
+    "chokidar": "^2.1.5",
     "coveralls": "^3.0.3",
     "cpx": "^1.5.0",
     "cross-env": "^5.2.0",
     "har-validator": "^5.1.3",
     "jest": "^24.5.0",
     "jest-cli": "^24.5.0",
-    "react-test-renderer": "^16.8.4",
+    "react-test-renderer": "^16.8.5",
     "ts-jest": "^24.0.0",
     "tslint": "^5.14.0",
     "tslint-react": "^3.6.0",
@@ -62,12 +62,12 @@
     "webpack-cli": "^3.3.0"
   },
   "dependencies": {
-    "@fdmg/fd-buttons": "^1.0.23",
+    "@fdmg/fd-buttons": "^1.0.24",
     "@fdmg/fd-card": "^1.0.10",
     "@fdmg/fd-typography": "^1.0.29",
-    "react": "^16.8.4",
-    "react-dom": "^16.8.4",
-    "styled-components": "^4.1.3",
+    "react": "^16.8.5",
+    "react-dom": "^16.8.5",
+    "styled-components": "^4.2.0",
     "uniqid": "^5.0.3"
   },
   "jest": {
