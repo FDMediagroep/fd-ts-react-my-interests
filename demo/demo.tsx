@@ -66,14 +66,14 @@ class App extends PureComponent<any, any> {
             tag: 'Sommelier',
             uuid: uniqid()
         }]
-    }
+    };
 
-    onAddInterest = (interest: String) => {
-        if (interest.length === 0) return;
-        let interests = [...this.state.interests, {
+    onAddInterest = (interest: string) => {
+        if (interest.length === 0) { return; }
+        const interests = [...this.state.interests, {
             tag: interest,
-            uuid: uniqid()    
-        }]
+            uuid: uniqid()
+        }];
         interests.sort((a: any, b: any) => {
             if (a.tag.toUpperCase() < b.tag.toUpperCase()) {
                 return -1;
@@ -88,7 +88,7 @@ class App extends PureComponent<any, any> {
     onDisableAlertClick = (tag: string) => {
         this.setState({interests: this.state.interests.map((interest: any) => {
             if (interest.tag === tag) {
-                return {...interest, alertSelected: false}
+                return {...interest, alertSelected: false};
             } else {
                 return interest;
             }
@@ -98,7 +98,7 @@ class App extends PureComponent<any, any> {
     onEnableAlertClick = (tag: string) => {
         this.setState({interests: this.state.interests.map((interest: any) => {
             if (interest.tag === tag) {
-                return {...interest, alertSelected: true}
+                return {...interest, alertSelected: true};
             } else {
                 return interest;
             }
@@ -108,7 +108,7 @@ class App extends PureComponent<any, any> {
     onFollowClick = (tag: string) => {
         this.setState({interests: this.state.interests.map((interest: any) => {
             if (interest.tag === tag) {
-                return {...interest, selected: true}
+                return {...interest, selected: true};
             } else {
                 return interest;
             }
@@ -118,7 +118,7 @@ class App extends PureComponent<any, any> {
     onUnfollowClick = (tag: string) => {
         this.setState({interests: this.state.interests.map((interest: any) => {
             if (interest.tag === tag) {
-                return {...interest, selected: false, alertSelected: false}
+                return {...interest, selected: false, alertSelected: false};
             } else {
                 return interest;
             }
@@ -130,39 +130,44 @@ class App extends PureComponent<any, any> {
             <>
                 <GlobalStyle/>
                 <MyInterests
-                        cardStyle={this.props.cardStyle}
-                        onAddInterest={this.onAddInterest}
-                        onDisableAlertClick={this.onDisableAlertClick}
-                        onEnableAlertClick={this.onEnableAlertClick}
-                        onFollowClick={this.onFollowClick}
-                        onUnfollowClick={this.onUnfollowClick}
-                        title="Onderwerpen aanpassen"
-                        titleLink="https://fd.nl/mijn-nieuws"
-                        interests={this.state.interests}
-                    />
+                    cardStyle={this.props.cardStyle}
+                    onAddInterest={this.onAddInterest}
+                    onDisableAlertClick={this.onDisableAlertClick}
+                    onEnableAlertClick={this.onEnableAlertClick}
+                    onFollowClick={this.onFollowClick}
+                    onUnfollowClick={this.onUnfollowClick}
+                    title="Onderwerpen aanpassen"
+                    titleLink="https://fd.nl/mijn-nieuws"
+                    interests={this.state.interests}
+                />
             </>
         );
     }
 }
 
-ReactDOM.render(<>
-    <div>
-        <App cardStyle="default"/>
-    </div>
-</>,
+ReactDOM.render((
+    <>
+        <div>
+            <App cardStyle="default"/>
+        </div>
+    </>
+),
 document.querySelector('.overview aside'));
 
-ReactDOM.render(<>
-    <div>
-        <App cardStyle="article"/>
-    </div>
-</>,
+ReactDOM.render((
+    <>
+        <div>
+            <App cardStyle="article"/>
+        </div>
+    </>
+),
 document.querySelector('.article aside'));
 
-ReactDOM.render(<>
-    <div>
-        <App cardStyle="persoonlijk"/>
-    </div>
-</>,
+ReactDOM.render((
+    <>
+        <div>
+            <App cardStyle="persoonlijk"/>
+        </div>
+    </>
+),
 document.querySelector('.persoonlijk aside'));
-
