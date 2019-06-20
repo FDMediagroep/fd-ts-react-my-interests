@@ -64,7 +64,7 @@
   "dependencies": {
     "@fdmg/fd-buttons": "^1.0.26",
     "@fdmg/fd-card": "^1.0.10",
-    "@fdmg/fd-typography": "^1.0.31",
+    "@fdmg/fd-typography": "^2.0.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "styled-components": "^4.3.0",
