@@ -62,7 +62,7 @@
     "webpack-cli": "^3.3.0"
   },
   "dependencies": {
-    "@fdmg/fd-buttons": "^1.0.26",
+    "@fdmg/fd-buttons": "^2.0.0",
     "@fdmg/fd-card": "^1.0.10",
     "@fdmg/fd-typography": "^1.0.31",
     "react": "^16.8.6",
