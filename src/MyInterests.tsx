@@ -1,5 +1,5 @@
-import React, { PureComponent } from "react";
-import { createGlobalStyle } from "styled-components";
+import React, { useState } from "react";
+import { createGlobalStyle, css } from "styled-components";
 import TypoGraphy, { getAllTextStyles } from "@fdmg/fd-typography";
 import Card, { CardStyle, CardTypes } from "@fdmg/fd-card";
 import { FollowButtonStyle, FollowButton, AddButton, AddButtonStyle } from "@fdmg/fd-buttons";
@@ -31,153 +31,143 @@ export interface Props {
     titleLink?: string;
 }
 
-export default class MyInterests extends PureComponent<any, any> {
-    state: any = {};
+export default function MyInterests(props: Props) {
+    const [interestValue, setInterestValue] = useState('');
+    const [showAll, setShowAll] = useState(false);
+    const [showContent, setShowContent] = useState(true);
 
-    constructor(props: Props) {
-        super(props);
-        this.state = {
-            interestValue: '',
-            showAll: false,
-            showContent: true
-        };
-    }
+    const onShowMore = () => {
+        setShowAll(true);
+    };
 
-    onShowMore = () => {
-        this.setState({showAll: true});
-    }
+    const onShowLess = () => {
+        setShowAll(false);
+    };
 
-    onShowLess = () => {
-        this.setState({showAll: false});
-    }
-
-    onFollowClick: React.ReactEventHandler<HTMLButtonElement> = (e) => {
+    const onFollowClick: React.ReactEventHandler<HTMLButtonElement> = (e) => {
         const currentTarget = e.currentTarget;
         if (currentTarget.getAttribute('data-selected') === 'true') {
-            this.props.onUnfollowClick(currentTarget.getAttribute('data-tag') as string);
+            props.onUnfollowClick(currentTarget.getAttribute('data-tag') as string);
         } else {
-            this.props.onFollowClick(currentTarget.getAttribute('data-tag') as string);
+            props.onFollowClick(currentTarget.getAttribute('data-tag') as string);
         }
-    }
+    };
 
-    onEnableAlertClick: React.ReactEventHandler<HTMLElement> = (e) => {
+    const onEnableAlertClick: React.ReactEventHandler<HTMLElement> = (e) => {
         const currentTarget = e.currentTarget;
-        this.props.onEnableAlertClick(currentTarget.getAttribute('data-tag') as string);
-    }
+        props.onEnableAlertClick(currentTarget.getAttribute('data-tag') as string);
+    };
 
-    onDisableAlertClick: React.ReactEventHandler<HTMLElement> = (e) => {
+    const onDisableAlertClick: React.ReactEventHandler<HTMLElement> = (e) => {
         const currentTarget = e.currentTarget;
-        this.props.onDisableAlertClick(currentTarget.getAttribute('data-tag') as string);
-    }
+        props.onDisableAlertClick(currentTarget.getAttribute('data-tag') as string);
+    };
 
-    toggleShowContent = () => {
-        this.setState({showContent: !this.state.showContent});
-    }
+    const toggleShowContent = () => {
+        setShowContent(!showContent);
+    };
 
-    onKeyUp = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    const onKeyUp = (e: React.KeyboardEvent<HTMLInputElement>) => {
         if (e.keyCode === 13) {
-            const interestValue = e.currentTarget.value;
-            this.setState({interestValue: ''});
-            if (this.props.onAddInterest) { this.props.onAddInterest(interestValue); }
+            setInterestValue('');
+            if (props.onAddInterest) { props.onAddInterest(e.currentTarget.value); }
         }
-    }
+    };
 
-    onInterestChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        this.setState({interestValue: e.currentTarget.value});
-    }
+    const onInterestChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        setInterestValue(e.currentTarget.value);
+    };
 
-    onAddInterest = () => {
-        if (this.props.onAddInterest) { this.props.onAddInterest(this.state.interestValue); }
-        this.setState({interestValue: ''});
-    }
+    const onAddInterest = () => {
+        if (props.onAddInterest) { props.onAddInterest(interestValue); }
+        setInterestValue('');
+    };
 
-    render() {
-        return(
-            <>
-                <GlobalStyle/>
-                <Card cardStyle={this.props.cardStyle} className={`fd-my-interests${this.props.className ? ` ${this.props.className}` : ''}${this.state.showAll ? ' show-all' : ''}`}>
-                    <TypoGraphy className="fd-my-interests-h" textStyle="card-h">
-                        <h3><span>{this.props.title ? this.props.title : 'Onderwerpen aanpassen'}</span> {this.state.showContent ? <i className="icon-chevron-up" onClick={this.toggleShowContent}/> : <i className="icon-chevron-down" onClick={this.toggleShowContent}/>}</h3>
-                    </TypoGraphy>
-                    {this.state.showContent ? <div className="content">
-                        <div className="fd-my-interests-controls">
-                            <div className="fd-my-interests-input"><input type="text" placeholder="Nieuw onderwerp..." onChange={this.onInterestChange} value={this.state.interestValue} onKeyUp={this.onKeyUp}/> <AddButton buttonStyle={this.props.cardStyle === 'persoonlijk' ? this.props.cardStyle : 'default'} onClick={this.onAddInterest}>Toevoegen</AddButton></div>
-                        </div>
+    return (
+        <>
+            <GlobalStyle/>
+            <Card cardStyle={props.cardStyle} className={`fd-my-interests${props.className ? ` ${props.className}` : ''}${showAll ? ' show-all' : ''}`}>
+                <TypoGraphy className="fd-my-interests-h" textStyle="card-h">
+                    <h3><span>{props.title ? props.title : 'Onderwerpen aanpassen'}</span> {showContent ? <i className="icon-chevron-up" onClick={toggleShowContent}/> : <i className="icon-chevron-down" onClick={toggleShowContent}/>}</h3>
+                </TypoGraphy>
+                {showContent ? <div className="content">
+                    <div className="fd-my-interests-controls">
+                        <div className="fd-my-interests-input"><input type="text" placeholder="Nieuw onderwerp..." onChange={onInterestChange} value={interestValue} onKeyUp={onKeyUp}/> <AddButton buttonStyle={props.cardStyle === 'persoonlijk' ? props.cardStyle : 'default'} onClick={onAddInterest}>Toevoegen</AddButton></div>
+                    </div>
 
-                        <ul>
-                            {
-                                this.props.interests.map((interest: Interest, idx: number) => {
-                                    if (idx > 4) { return null; }
+                    <ul>
+                        {
+                            props.interests.map((interest: Interest, idx: number) => {
+                                if (idx > 4) { return null; }
 
-                                    return (
-                                        <li key={interest.uuid}>
-                                            <div className={`interest-container${interest.selected ? ' selected' : ''}`}>
-                                                <a href={`${interest.link ? interest.link : `/tag/${interest.tag}`}`} title={interest.tag}>{interest.tag}</a>
-                                                <span className="interest-controls">
-                                                    <span className={`alert${interest.alertSelected ? ' selected' : ''}`} data-addurl={interest.addAlertLink ? interest.addAlertLink : '/add-alert'} data-deleteurl={interest.addAlertLink ? interest.addAlertLink : '/add-alert'}>
-                                                        <i className="default-icon icon-bell" data-tag={interest.tag} onClick={this.onEnableAlertClick}/>
-                                                        <i className="active-icon icon-bell1" data-tag={interest.tag} onClick={this.onDisableAlertClick}/>
-                                                    </span>
-                                                    <FollowButton
-                                                        buttonStyle={this.props.cardStyle === 'persoonlijk' ? this.props.cardStyle : 'default'}
-                                                        onClick={this.onFollowClick}
-                                                        tag={interest.tag}
-                                                        selected={interest.selected}
-                                                        followLink={interest.addInterestLink}
-                                                        unFollowLink={interest.deleteInterestLink}
-                                                        followButtonText={interest.buttonText}
-                                                        unFollowButtonText={interest.activeButtonText}
-                                                    />
+                                return (
+                                    <li key={interest.uuid}>
+                                        <div className={`interest-container${interest.selected ? ' selected' : ''}`}>
+                                            <a href={`${interest.link ? interest.link : `/tag/${interest.tag}`}`} title={interest.tag}>{interest.tag}</a>
+                                            <span className="interest-controls">
+                                                <span className={`alert${interest.alertSelected ? ' selected' : ''}`} data-addurl={interest.addAlertLink ? interest.addAlertLink : '/add-alert'} data-deleteurl={interest.addAlertLink ? interest.addAlertLink : '/add-alert'}>
+                                                    <i className="default-icon icon-bell" data-tag={interest.tag} onClick={onEnableAlertClick}/>
+                                                    <i className="active-icon icon-bell1" data-tag={interest.tag} onClick={onDisableAlertClick}/>
                                                 </span>
-                                            </div>
-                                        </li>
-                                    );
-                                })
-                            }
-                        </ul>
-                        {this.props.interests.length > 4 ? <>
-                                <ul className="optional-content">
-                                    {
-                                        this.props.interests.map((interest: Interest, idx: number) => {
-                                            if (idx <= 4) { return null; }
+                                                <FollowButton
+                                                    buttonStyle={props.cardStyle === 'persoonlijk' ? props.cardStyle : 'default'}
+                                                    onClick={onFollowClick}
+                                                    tag={interest.tag}
+                                                    selected={interest.selected}
+                                                    followLink={interest.addInterestLink}
+                                                    unFollowLink={interest.deleteInterestLink}
+                                                    followButtonText={interest.buttonText}
+                                                    unFollowButtonText={interest.activeButtonText}
+                                                />
+                                            </span>
+                                        </div>
+                                    </li>
+                                );
+                            })
+                        }
+                    </ul>
+                    {props.interests.length > 4 ? <>
+                            <ul className="optional-content">
+                                {
+                                    props.interests.map((interest: Interest, idx: number) => {
+                                        if (idx <= 4) { return null; }
 
-                                            return (
-                                                <li key={interest.uuid}>
-                                                    <div className={`interest-container${interest.selected ? ' selected' : ''}`}>
-                                                        <a href={`${interest.link ? interest.link : `/tag/${interest.tag}`}`} title={interest.tag}>{interest.tag}</a>
-                                                        <span className="interest-controls">
-                                                            <span className={`alert${interest.alertSelected ? ' selected' : ''}`} data-addurl={interest.addAlertLink ? interest.addAlertLink : '/add-alert'} data-deleteurl={interest.addAlertLink ? interest.addAlertLink : '/add-alert'}>
-                                                                <i className="default-icon icon-bell" data-tag={interest.tag} onClick={this.onEnableAlertClick}/>
-                                                                <i className="active-icon icon-bell1" data-tag={interest.tag} onClick={this.onDisableAlertClick}/>
-                                                            </span>
-                                                            <FollowButton
-                                                                buttonStyle={this.props.cardStyle === 'persoonlijk' ? this.props.cardStyle : 'default'}
-                                                                onClick={this.onFollowClick}
-                                                                tag={interest.tag}
-                                                                selected={interest.selected}
-                                                                followLink={interest.addInterestLink}
-                                                                unFollowLink={interest.deleteInterestLink}
-                                                                followButtonText={interest.buttonText}
-                                                                unFollowButtonText={interest.activeButtonText}
-                                                            />
+                                        return (
+                                            <li key={interest.uuid}>
+                                                <div className={`interest-container${interest.selected ? ' selected' : ''}`}>
+                                                    <a href={`${interest.link ? interest.link : `/tag/${interest.tag}`}`} title={interest.tag}>{interest.tag}</a>
+                                                    <span className="interest-controls">
+                                                        <span className={`alert${interest.alertSelected ? ' selected' : ''}`} data-addurl={interest.addAlertLink ? interest.addAlertLink : '/add-alert'} data-deleteurl={interest.addAlertLink ? interest.addAlertLink : '/add-alert'}>
+                                                            <i className="default-icon icon-bell" data-tag={interest.tag} onClick={onEnableAlertClick}/>
+                                                            <i className="active-icon icon-bell1" data-tag={interest.tag} onClick={onDisableAlertClick}/>
                                                         </span>
-                                                    </div>
-                                                </li>
-                                            );
-                                        })
-                                    }
-                                </ul>
-                                <span className="show-less" onClick={this.onShowLess}><i className="icon-chevron-up"/><div>Toon minder</div></span>
-                                <span className="show-more" onClick={this.onShowMore}><div>Toon meer</div><i className="icon-chevron-down"/></span>
-                            </> : null}
-                    </div> : null}
-                </Card>
-            </>
-        );
-    }
+                                                        <FollowButton
+                                                            buttonStyle={props.cardStyle === 'persoonlijk' ? props.cardStyle : 'default'}
+                                                            onClick={onFollowClick}
+                                                            tag={interest.tag}
+                                                            selected={interest.selected}
+                                                            followLink={interest.addInterestLink}
+                                                            unFollowLink={interest.deleteInterestLink}
+                                                            followButtonText={interest.buttonText}
+                                                            unFollowButtonText={interest.activeButtonText}
+                                                        />
+                                                    </span>
+                                                </div>
+                                            </li>
+                                        );
+                                    })
+                                }
+                            </ul>
+                            <span className="show-less" onClick={onShowLess}><i className="icon-chevron-up"/><div>Toon minder</div></span>
+                            <span className="show-more" onClick={onShowMore}><div>Toon meer</div><i className="icon-chevron-down"/></span>
+                        </> : null}
+                </div> : null}
+            </Card>
+        </>
+    );
 }
 
-const GlobalStyle = createGlobalStyle`
+const styles = css`
 .fd-my-interests {
     display: flex;
     flex-direction: column;
@@ -351,10 +341,12 @@ const GlobalStyle = createGlobalStyle`
 }
 `;
 
-export const MyInterestsStyle = createGlobalStyle`
-${(CardStyle as any).globalStyle.rules}
-${getAllTextStyles(['card-h']).globalStyle.rules}
-${(AddButtonStyle as any).globalStyle.rules}
-${(FollowButtonStyle as any).globalStyle.rules}
-${(GlobalStyle as any).globalStyle.rules}
+const GlobalStyle = createGlobalStyle`${styles}`;
+
+export const MyInterestsStyle = css`
+${CardStyle}
+${getAllTextStyles(['card-h'])}
+${AddButtonStyle}
+${FollowButtonStyle}
+${styles}
 `;

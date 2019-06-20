@@ -1,4 +1,3 @@
-import React, { PureComponent } from "react";
 import { CardTypes } from "@fdmg/fd-card";
 interface Interest {
     activeButtonText?: string;
@@ -25,19 +24,6 @@ export interface Props {
     title?: string;
     titleLink?: string;
 }
-export default class MyInterests extends PureComponent<any, any> {
-    state: any;
-    constructor(props: Props);
-    onShowMore: () => void;
-    onShowLess: () => void;
-    onFollowClick: React.ReactEventHandler<HTMLButtonElement>;
-    onEnableAlertClick: React.ReactEventHandler<HTMLElement>;
-    onDisableAlertClick: React.ReactEventHandler<HTMLElement>;
-    toggleShowContent: () => void;
-    onKeyUp: (e: React.KeyboardEvent<HTMLInputElement>) => void;
-    onInterestChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
-    onAddInterest: () => void;
-    render(): JSX.Element;
-}
-export declare const MyInterestsStyle: import("styled-components").GlobalStyleComponent<{}, import("styled-components").DefaultTheme>;
+export default function MyInterests(props: Props): JSX.Element;
+export declare const MyInterestsStyle: import("styled-components").FlattenSimpleInterpolation;
 export {};
