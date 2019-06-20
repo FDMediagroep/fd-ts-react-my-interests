@@ -341,8 +341,6 @@ const styles = css`
 }
 `;
 
-const GlobalStyle = createGlobalStyle`${styles}`;
-
 export const MyInterestsStyle = css`
 ${CardStyle}
 ${getAllTextStyles(['card-h'])}
@@ -350,3 +348,5 @@ ${AddButtonStyle}
 ${FollowButtonStyle}
 ${styles}
 `;
+
+const GlobalStyle = createGlobalStyle`${MyInterestsStyle}`;
