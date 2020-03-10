@@ -67,7 +67,7 @@
         "@fdmg/fd-typography": "^2.0.1",
         "react": "^16.8.6",
         "react-dom": "^16.8.6",
-        "styled-components": "^5.0.0-beta.6-ej4",
+        "styled-components": "^5.0.1",
         "uniqid": "^5.0.3"
     },
     "jest": {
